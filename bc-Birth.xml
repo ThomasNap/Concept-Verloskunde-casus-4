@@ -1,0 +1,42 @@
+<Procedure xmlns="http://hl7.org/fhir">
+   <id value="8ac4f52d-91d1-4f85-99cb-36de345c7b29" />
+   <meta>
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Procedure" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-Birth" />
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="8ac4f52d-91d1-4f85-99cb-36de345c7b29" />
+   </identifier>
+   <partOf>
+      <reference value="Procedure/6e4a9b0f-5bcb-49d6-832e-77f0b1c0da5b" />
+      <display value="bevalling: Willemijn Yzendoorn" />
+   </partOf>
+   <status value="completed" />
+   <category>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="386637004" />
+         <display value="Obstetrische verrichting (verrichting)" />
+      </coding>
+   </category>
+   <code>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="3950001" />
+         <display value="geboorte (bevinding)" />
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/Jasper" />
+      <display value="Kind: Jasper" />
+   </subject>
+   <context>
+      <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+      <display value="Zorgepisode: Willemijn Yzendoorn" />
+   </context>
+   <reasonReference>
+      <reference value="Condition/017f694c-6ebd-4b8e-afb8-583cf1ab0955" />
+      <display value="Zwangerschap: Willemijn Yzendoorn" />
+   </reasonReference>
+</Procedure>

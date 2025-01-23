@@ -1,0 +1,32 @@
+<Goal xmlns="http://hl7.org/fhir">
+   <id value="b97bddb9-06d4-4a04-9d51-0a1c2b0fca50" />
+   <meta>
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentObjective" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-IndividualCarePlan-Goal" />
+   </meta>
+   <extension url="http://nictiz.nl/fhir/StructureDefinition/bc-goal-enddate">
+      <valueDate value="${DATE, T, D, -271}" />
+   </extension>
+   <extension url="http://nictiz.nl/fhir/StructureDefinition/bc-careplan-reference">
+      <valueReference>
+         <reference value="Careplan/3c9fcae6-1cb1-4eb2-b454-968fcfeffac2" />
+         <display value="Zorgafspraak 1 Willemij Yzendoorn" />
+      </valueReference>
+   </extension>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="1edbab21-8fdf-11ec-1423-020000000000" />
+   </identifier>
+   <status value="accepted" />
+   <description>
+      <text value="Gezond levend kind" />
+   </description>
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <target>
+      <dueDate value="${DATE, T, D, -303}" />
+   </target>
+   <statusDate value="${DATE, T, D, -527}" />
+</Goal>

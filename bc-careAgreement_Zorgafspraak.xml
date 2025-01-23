@@ -1,0 +1,35 @@
+<CarePlan xmlns="http://hl7.org/fhir">
+    <id value="3c9fcae6-1cb1-4eb2-b454-968fcfeffac2" />
+    <meta>
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-careplan" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-CareAgreement" />
+    </meta>
+    <identifier>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+        <value value="3c9fcae6-1cb1-4eb2-b454-968fcfeffac2" />
+    </identifier>
+    <status value="completed" />
+    <intent value="plan" />
+    <subject>
+        <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+        <display value="Vrouw: Willemijn Yzendoorn" />
+    </subject>
+    <context>
+        <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+        <display value="Zorgepisode: Willemijn Yzendoorn" />
+    </context>
+    <period>
+        <start value="${DATE, T, D, -527}" />
+        <end value="${DATE, T, D, -271}" />
+    </period>
+    <author>
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+            <valueReference>
+                <reference value="PractitionerRole/e16b50b8-7bb7-4ff9-b43f-419a1c22ba2a" />
+                <display value="Gemma XXX_Groeneboom (Verloskundigenpraktijk 't Groen)" />
+            </valueReference>
+        </extension>
+        <reference value="Practitioner/baffd048-a274-4bf2-a9e3-9bb1e5b3820f" />
+        <display value="Gemma XXX_Groeneboom" />
+    </author>
+</CarePlan>

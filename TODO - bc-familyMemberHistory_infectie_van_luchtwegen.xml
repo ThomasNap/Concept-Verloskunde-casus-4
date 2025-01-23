@@ -1,0 +1,28 @@
+<FamilyMemberHistory xmlns="http://hl7.org/fhir">
+    <id value="e0b0d13d-036f-455b-b462-52ed28259868" />
+    <meta>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-FamilyMemberHistory" />
+    </meta>
+    <status value="completed" />
+    <patient>
+        <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+        <display value="Vrouw: Willemijn Yzendoorn" />
+    </patient>
+    <date value="${DATE, T, D, -527}" />
+    <relationship>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="9947008" />
+            <display value="biologische vader (persoon)" />
+        </coding>
+    </relationship>
+    <deceasedBoolean value="false" />
+    <!-- TO DO: FIX CONDITION-->
+    <condition>
+        <code>
+            <system value="http://snomed.info/sct" />
+            <code value="275498002" />
+            <display value="infectie van luchtwegen (aandoening)" />
+        </code>
+    </condition>
+</FamilyMemberHistory>

@@ -1,0 +1,59 @@
+<Encounter xmlns="http://hl7.org/fhir">
+   <id value="d65243b0-c34d-42d1-bea0-ad2f32afc2b6" />
+   <meta>
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Encounter" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-Encounter" />
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="d65243b0-c34d-42d1-bea0-ad2f32afc2b6" />
+   </identifier>
+   <status value="finished" />
+   <class>
+      <system value="http://hl7.org/fhir/v3/ActCode" />
+      <code value="FLD" />
+      <display value="Op lokatie" />
+   </class>
+   <type>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="11429006" />
+         <display value="consult (verrichting)" />
+      </coding>
+   </type>
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <episodeOfCare>
+      <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+      <display value="Zorgepisode: Willemijn Yzendoorn" />
+   </episodeOfCare>
+   <participant>
+      <individual>
+         <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+            <valueReference>
+               <reference value="PractitionerRole/e16b50b8-7bb7-4ff9-b43f-419a1c22ba2a" />
+               <display
+                  value="Zorgverlenerrol: Gemma XXX_Groeneboom (Verloskundigenpraktijk 't Groen)" />
+            </valueReference>
+         </extension>
+         <reference value="Practitioner/baffd048-a274-4bf2-a9e3-9bb1e5b3820f" />
+         <display value="Zorgverlener - CaseManager: Gemma XXX_Groeneboom" />
+      </individual>
+   </participant>
+   <period>
+      <start value="${DATE, T, D, -374}" />
+      <end value="${DATE, T, D, -374}" />
+   </period>
+   <diagnosis>
+      <condition>
+         <reference value="Condition/017f694c-6ebd-4b8e-afb8-583cf1ab0955" />
+         <display value="Zwangerschap: Willemijn Yzendoorn" />
+      </condition>
+   </diagnosis>
+   <serviceProvider>
+      <reference value="Organization/e0a95ee2-acc7-4985-9431-1c930c1e6dda" />
+      <display value="Organizatie: Verloskundigenpraktijk 't Groen" />
+   </serviceProvider>
+</Encounter>

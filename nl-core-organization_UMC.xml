@@ -1,0 +1,44 @@
+<Organization xmlns="http://hl7.org/fhir">
+   <id value="22b1037f-7ce9-4220-b0bb-c1b95208ac3f" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
+   </meta>
+   <identifier>
+      <system value="http://fhir.nl/fhir/NamingSystem/agb-z" />
+      <value value="06020806" />
+   </identifier>
+   <type>
+      <coding>
+         <system value="http://nictiz.nl/fhir/NamingSystem/organization-type" />
+         <code value="V5" />
+         <display value="Universitair Medisch Centrum" />
+      </coding>
+   </type>
+   <name value="Erasmus MC, Sophia kinderziekenhuis" />
+   <address>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-AD-use">
+         <valueCode value="WP" />
+      </extension>
+      <line value="Dr. Molewaterplein 60">
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+            <valueString value="Dr. Molewaterplein" />
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+            <valueString value="60" />
+         </extension>
+      </line>
+      <city value="ROTTERDAM" />
+      <postalCode value="3015GJ" />
+      <country value="Nederland">
+         <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+            <valueCodeableConcept>
+               <coding>
+                  <system value="urn:oid:2.16.840.1.113883.2.4.4.16.34" />
+                  <code value="6030" />
+                  <display value="Nederland" />
+               </coding>
+            </valueCodeableConcept>
+         </extension>
+      </country>
+   </address>
+</Organization>

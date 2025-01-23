@@ -1,0 +1,34 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="0b986ae6-958b-4b36-a5c5-b8b4d98b8ac1" />
+   <meta>
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Problem" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-DisorderOfPregnancy" />
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="0b986ae6-958b-4b36-a5c5-b8b4d98b8ac1" />
+   </identifier>
+   <clinicalStatus value="active" />
+   <category>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="404684003" />
+         <display value="Klinische bevinding" />
+      </coding>
+   </category>
+   <code>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="	22033007" />
+         <display value="intra-uteriene groeiretardatie (aandoening)" />
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <context>
+      <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+      <display value="Zorgepisode: Willemijn Yzendoorn" />
+   </context>
+</Condition>

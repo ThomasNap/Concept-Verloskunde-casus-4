@@ -1,0 +1,39 @@
+<Observation xmlns="http://hl7.org/fhir">
+   <id value="1f4e76c1-53ad-4051-b735-d59bfa8a6df9" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy-Parity" />
+   </meta>
+   <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
+      <valueReference>
+         <reference value="Condition/017f694c-6ebd-4b8e-afb8-583cf1ab0955" />
+         <display value="Zwangerschap: Willemijn Yzendoorn" />
+      </valueReference>
+   </extension>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="1f4e76c1-53ad-4051-b735-d59bfa8a6df9" />
+   </identifier>
+   <status value="final" />
+   <code>
+      <coding>
+         <system value="http://loinc.org" />
+         <code value="11977-6" />
+         <display value="Pariteit [aantal] d.m.v. rapportage" />
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <context>
+      <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+      <display value="Zorgepisode: Willemijn Yzendoorn" />
+   </context>
+   <valueQuantity>
+      <value value="1" />
+      <unit value="1" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="1" />
+   </valueQuantity>
+</Observation>

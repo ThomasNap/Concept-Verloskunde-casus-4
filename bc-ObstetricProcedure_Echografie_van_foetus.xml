@@ -1,0 +1,43 @@
+<Procedure xmlns="http://hl7.org/fhir">
+   <id value="c57d4f2b-26e6-4625-a3bc-7e68b3745438" />
+   <meta>
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Procedure" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-ObstetricProcedure" />
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="c57d4f2b-26e6-4625-a3bc-7e68b3745438" />
+   </identifier>
+   <partOf>
+      <reference value="Procedure/1e9a4a20-98d0-45d8-b85d-c029c68fff08" />
+      <display value="uitdrijvingsfase kind3 Tom zwangerschap 1 Vrouw2" />
+   </partOf>
+   <status value="completed" />
+   <category>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="386637004" />
+         <display value="obstetrische verrichting (verrichting)" />
+      </coding>
+   </category>
+   <code>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="241491007" />
+         <display value="echografie van foetus (verrichting)" />
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <context>
+      <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+      <display value="Zorgepisode: Willemijn Yzendoorn" />
+   </context>
+   <performedDateTime value="${DATE, T, D, -374}" />
+   <reasonReference>
+      <reference value="Condition/0b986ae6-958b-4b36-a5c5-b8b4d98b8ac1" />
+      <display value="Probleem: Groeiretardatie" />
+   </reasonReference>
+</Procedure>

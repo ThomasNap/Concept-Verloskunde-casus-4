@@ -1,0 +1,44 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+    <id value="4bfe998d-e68f-48ff-b017-0f36ccb479c9" />
+    <meta>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance" />
+    </meta>
+    <identifier>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+        <value value="4bfe998d-e68f-48ff-b017-0f36ccb479c9" />
+    </identifier>
+    <clinicalStatus value="active">
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/v3/ActStatus" />
+                    <code value="active" />
+                    <display value="Active" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+    </clinicalStatus>
+    <verificationStatus value="confirmed" />
+    <category value="biologic">
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="419199007" />
+                    <display value="Allergy to substance" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1003755004" />
+            <display value="allergie voor latexeiwit van Hevea brasiliensis (bevinding)" />
+        </coding>
+    </code>
+    <patient>
+        <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+        <display value="Vrouw: Willemijn Yzendoorn" />
+    </patient>
+</AllergyIntolerance>

@@ -1,0 +1,39 @@
+<Observation xmlns="http://hl7.org/fhir">
+   <id value="a3f2b6c9-7e44-4d62-b5a2-1e334dbb3df9" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy-PregnancyDuration" />
+   </meta>
+   <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
+      <valueReference>
+         <reference value="Condition/017f694c-6ebd-4b8e-afb8-583cf1ab0955" />
+         <display value="Zwangerschap: Willemijn Yzendoorn" />
+      </valueReference>
+   </extension>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="a3f2b6c9-7e44-4d62-b5a2-1e334dbb3df9" />
+   </identifier>
+   <status value="final" />
+   <code>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="57036006" />
+         <display value="Amenorroeduur (waarneembare entiteit)" />
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <context>
+      <reference value="Encounter/d65243b0-c34d-42d1-bea0-ad2f32afc2b6" />
+      <display value="Contact 1 - Prenatale controle" />
+   </context>
+   <valueQuantity>
+      <value value="209" />
+      <unit value="d" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+   </valueQuantity>
+</Observation>

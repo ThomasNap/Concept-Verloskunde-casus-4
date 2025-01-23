@@ -1,0 +1,39 @@
+<CarePlan xmlns="http://hl7.org/fhir">
+   <id value="f986a5b1-e220-43a6-b686-934aaf11fdb6" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-careplan" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-IndividualCareplan" />
+   </meta>
+   <extension url="http://nictiz.nl/fhir/StructureDefinition/bc-careplan-coordinator">
+      <valueReference>
+         <reference value="Practitioner/baffd048-a274-4bf2-a9e3-9bb1e5b3820f" />
+         <display value="Gemma XXX_Groeneboom" />
+      </valueReference>
+   </extension>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="f986a5b1-e220-43a6-b686-934aaf11fdb6" />
+   </identifier>
+   <status value="completed" />
+   <intent value="plan" />
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <context>
+      <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+      <display value="Zorgepisode: Willemijn Yzendoorn" />
+   </context>
+   <period>
+      <start value="${DATE, T, D, -527}" />
+      <end value="${DATE, T, D, -271}" />
+   </period>
+   <careTeam>
+      <reference value="CareTeam/bb0f73b6-e509-4e9c-8322-158754aa37b8" />
+      <display value="careteam Willemijn Yzendoorn" />
+   </careTeam>
+   <goal>
+      <reference value="Goal/b97bddb9-06d4-4a04-9d51-0a1c2b0fca50" />
+      <display value="behandeldoen Willemijn Yzendoorn" />
+   </goal>
+</CarePlan>

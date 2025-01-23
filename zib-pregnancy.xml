@@ -1,0 +1,26 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="017f694c-6ebd-4b8e-afb8-583cf1ab0955" />
+   <meta>
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy" />
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="10202301" />
+   </identifier>
+   <clinicalStatus value="inactive" />
+   <code>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="118185001" />
+         <display value="bevinding betreffende zwangerschap (bevinding)" />
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <context>
+      <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+      <display value="Zorgepisode: Willemijn Yzendoorn" />
+   </context>
+</Condition>

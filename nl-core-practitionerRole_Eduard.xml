@@ -1,0 +1,35 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+   <id value="ee5b79fa-46f2-4c7f-b140-81eea7c9dda4" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole" />
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="ee5b79fa-46f2-4c7f-b140-81eea7c9dda4" />
+   </identifier>
+   <practitioner>
+      <reference value="Practitioner/50f25032-1049-4929-ab24-83c7f8ed6936" />
+      <display value="Zorgverlener: Eduard XXX_Egelinks - XXX_Gras" />
+   </practitioner>
+   <organization>
+      <reference value="Organization/22b1037f-7ce9-4220-b0bb-c1b95208ac3f" />
+      <display value="Organisatie: Erasmus MC, Sophia kinderziekenhuis" />
+   </organization>
+   <!-- TO DO: Make this 'hoofdbehandelaar'-->
+   <code>
+      <coding>
+         <system value="http://hl7.org/fhir/v3/ParticipationType" />
+         <code value="PRF" />
+         <display value="Performer" />
+      </coding>
+      <!-- -->
+   </code>
+   <specialty>
+      <coding>
+         <system value="http://fhir.nl/fhir/NamingSystem/uzi-rolcode" />
+         <version value="2020-04-01T00:00:00" />
+         <code value="01.046" />
+         <display value="Gynaecoloog" />
+      </coding>
+   </specialty>
+</PractitionerRole>

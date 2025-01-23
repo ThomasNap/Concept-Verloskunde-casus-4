@@ -1,0 +1,44 @@
+<Organization xmlns="http://hl7.org/fhir">
+   <id value="e0a95ee2-acc7-4985-9431-1c930c1e6dda" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
+   </meta>
+   <identifier>
+      <system value="http://fhir.nl/fhir/NamingSystem/agb-z" />
+      <value value="08001234" />
+   </identifier>
+   <type>
+      <coding>
+         <system value="http://nictiz.nl/fhir/NamingSystem/organization-type" />
+         <code value="G3" />
+         <display value="Verloskundigenpraktijk" />
+      </coding>
+   </type>
+   <name value="Verloskundigenpraktijk 't Groen" />
+   <address>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-AD-use">
+         <valueCode value="WP" />
+      </extension>
+      <line value="Groeneweg 1000">
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+            <valueString value="Groeneweg" />
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+            <valueString value="1000" />
+         </extension>
+      </line>
+      <city value="STITSWERD" />
+      <postalCode value="1234ZZ" />
+      <country value="Nederland">
+         <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+            <valueCodeableConcept>
+               <coding>
+                  <system value="urn:oid:2.16.840.1.113883.2.4.4.16.34" />
+                  <code value="6030" />
+                  <display value="Nederland" />
+               </coding>
+            </valueCodeableConcept>
+         </extension>
+      </country>
+   </address>
+</Organization>

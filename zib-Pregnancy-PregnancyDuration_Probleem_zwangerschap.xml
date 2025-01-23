@@ -1,0 +1,45 @@
+<Observation xmlns="http://hl7.org/fhir">
+   <id value="9f4a1b53-c3a2-44b2-9c6b-76c897bc3fae" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy-PregnancyDuration" />
+   </meta>
+   <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
+      <valueReference>
+         <reference value="Condition/455b28f0-9ad1-41c3-bf72-89dce1086074" />
+         <display value="Zwangerschap: Ostendorf Maaike" />
+      </valueReference>
+   </extension>
+   <extension url="http://nictiz.nl/fhir/StructureDefinition/workflow-supportingInfoSTU3">
+      <valueReference>
+         <reference value="Condition/0b986ae6-958b-4b36-a5c5-b8b4d98b8ac1" />
+         <display value="Groeiretardatie" />
+      </valueReference>
+   </extension>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="9f4a1b53-c3a2-44b2-9c6b-76c897bc3fae" />
+   </identifier>
+   <status value="final" />
+   <code>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="57036006" />
+         <display value="Amenorroeduur (waarneembare entiteit)" />
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <context>
+      <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+      <display value="Zorgepisode: Willemijn Yzendoorn" />
+   </context>
+   <valueQuantity>
+      <value value="209" />
+      <unit value="d" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+   </valueQuantity>
+</Observation>

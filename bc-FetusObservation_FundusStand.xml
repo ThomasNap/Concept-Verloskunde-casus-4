@@ -1,0 +1,35 @@
+<Observation xmlns="http://hl7.org/fhir">
+   <id value="e2a9fd37-4478-4a5f-a25f-1e27a924a35f" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-FetusObservation" />
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="e2a9fd37-4478-4a5f-a25f-1e27a924a35f" />
+   </identifier>
+   <status value="final" />
+   <code>
+      <coding>
+         <system value="http://loinc.org" />
+         <code value="11881-0" />
+         <display value="Fundushoogte [afmeting] in uterus d.m.v. meetlint" />
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <context>
+      <reference value="Encounter/d65243b0-c34d-42d1-bea0-ad2f32afc2b6" />
+      <display value="Contact 1 - Prenatale controle" />
+   </context>
+   <effectiveDateTime value="${DATE, T, D, -374}" />
+   <valueCodeableConcept>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="289629009" />
+         <display value="fundus uteri boven navel (bevinding)" />
+      </coding>
+   </valueCodeableConcept>
+</Observation>

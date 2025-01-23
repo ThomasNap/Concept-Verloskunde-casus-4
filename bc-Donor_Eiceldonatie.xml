@@ -1,0 +1,16 @@
+<RelatedPerson xmlns="http://hl7.org/fhir">
+   <id value="b6d890fa-5896-45a7-9f60-5a5e732d6c4a" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-Donor" />
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="b6d890fa-5896-45a7-9f60-5a5e732d6c4a" />
+   </identifier>
+   <patient>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </patient>
+   <birthDate value="1986-07-29" />
+</RelatedPerson>

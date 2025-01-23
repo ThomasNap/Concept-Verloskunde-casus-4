@@ -1,0 +1,41 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="b732e1fc-40dc-45f2-b9ec-5b8fc218e50b" />
+   <meta>
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Problem" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-DisorderOfLaborAndDelivery" />
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/condition-partOf">
+      <valueReference>
+         <reference value="Procedure/2f09c5b5-02f5-4a9c-a123-715cdb1f8958" />
+         <display value="uitdrijvingsfase kind jasper" />
+      </valueReference>
+   </extension>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="b732e1fc-40dc-45f2-b9ec-5b8fc218e50b" />
+   </identifier>
+   <clinicalStatus value="active" />
+   <category>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="362972006" />
+         <display value="aandoening durante partu (aandoening)" />
+      </coding>
+   </category>
+   <code>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="	12867002" />
+         <display value="foetale nood met invloed op behandeling voor moeder (aandoening)" />
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <context>
+      <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+      <display value="Zorgepisode: Willemijn Yzendoorn" />
+   </context>
+   <onsetDateTime value="${DATE, T, D, -324}" />
+</Condition>

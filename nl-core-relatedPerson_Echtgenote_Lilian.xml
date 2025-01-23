@@ -1,0 +1,61 @@
+<RelatedPerson xmlns="http://hl7.org/fhir">
+   <id value="c1cac648-9972-47a9-ab7f-d879afb9eb6f" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson" />
+   </meta>
+   <extension url="http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role">
+      <valueCodeableConcept>
+         <coding>
+            <system value="urn:oid:2.16.840.1.113883.2.4.3.11.22.472" />
+            <code value="1" />
+            <display value="Eerste relatie/contactpersoon" />
+         </coding>
+      </valueCodeableConcept>
+   </extension>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="c1cac648-9972-47a9-ab7f-d879afb9eb6f" />
+   </identifier>
+   <patient>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Willemijn XXX_Yzendoorn" />
+   </patient>
+   <relationship>
+      <coding>
+         <system value="http://hl7.org/fhir/v3/RoleCode" />
+         <code value="WIFE" />
+         <display value="Echtgenote" />
+      </coding>
+   </relationship>
+   <name>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
+         <valueCode value="NL3" />
+      </extension>
+      <family value="XXX_Yzendoorn van den XXX_Berg">
+         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-name">
+            <valueString value="XXX_Yzendoorn" />
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name-prefix">
+            <valueString value="van den" />
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+            <valueString value="XXX_Berg" />
+         </extension>
+      </family>
+      <given value="Lilian">
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+            <valueCode value="CL" />
+         </extension>
+      </given>
+      <given value="L">
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+            <valueCode value="IN" />
+         </extension>
+      </given>
+      <given value="Lilian">
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+            <valueCode value="BR" />
+         </extension>
+      </given>
+   </name>
+</RelatedPerson>

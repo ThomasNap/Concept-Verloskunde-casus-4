@@ -1,0 +1,32 @@
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="8b3f5d1b-65f6-41e0-bb5a-d50c9c242f4d" />
+    <meta>
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-MaternalObservation" />
+    </meta>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
+        <valueReference>
+            <reference value="Condition/017f694c-6ebd-4b8e-afb8-583cf1ab0955" />
+            <display value="Zwangerschap: Willemijn Yzendoorn" />
+        </valueReference>
+    </extension>
+    <status value="final" />
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="390281000146101" />
+            <display
+                value="voorgeschiedenis met trisomie en partiële trisomie van autosoom (situatie)" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+        <display value="Vrouw: Willemijn Yzendoorn" />
+    </subject>
+    <context>
+        <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+        <display value="Zorgepisode: Willemijn Yzendoorn" />
+    </context>
+    <effectiveDateTime value="${DATE, T, D, -527}" />
+    <valueBoolean value="true" />
+</Observation>

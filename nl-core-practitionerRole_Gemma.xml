@@ -1,0 +1,26 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+   <id value="e16b50b8-7bb7-4ff9-b43f-419a1c22ba2a"/>
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"/>
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6"/>
+      <value value="e16b50b8-7bb7-4ff9-b43f-419a1c22ba2a"/>
+   </identifier>
+   <practitioner>
+      <reference value="Practitioner/baffd048-a274-4bf2-a9e3-9bb1e5b3820f"/>
+      <display value="Zorgverlener: Gemma XXX_Groeneboom-XXX_Gras"/>
+   </practitioner>
+   <organization>
+      <reference value="Organization/e0a95ee2-acc7-4985-9431-1c930c1e6dda"/>
+      <display value="Organisatie: Verloskundigenpraktijk 't Groen"/>
+   </organization>
+   <specialty>
+      <coding>
+         <system value="http://fhir.nl/fhir/NamingSystem/uzi-rolcode"/>
+         <version value="2020-04-01T00:00:00"/>
+         <code value="03.000"/>
+         <display value="Verloskundige"/>
+      </coding>
+   </specialty>
+</PractitionerRole>

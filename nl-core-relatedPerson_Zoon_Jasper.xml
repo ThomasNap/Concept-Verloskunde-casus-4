@@ -1,0 +1,36 @@
+<RelatedPerson xmlns="http://hl7.org/fhir">
+   <id value="01b0735f-2451-4676-9d02-54214208287a" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson" />
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="c1cac648-9972-47a9-ab7f-d879afb9eb6f" />
+   </identifier>
+   <patient>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Willemijn XXX_Yzendoorn" />
+   </patient>
+   <relationship>
+      <coding>
+         <system value="http://hl7.org/fhir/v3/RoleCode" />
+         <code value="SONC" />
+         <display value="Zoon" />
+      </coding>
+   </relationship>
+   <name>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
+         <valueCode value="NL1" />
+      </extension>
+      <family value="XXX_Yzendoorn">
+         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+            <valueString value="XXX_Yzendoorn" />
+         </extension>
+      </family>
+      <given value="Jasper">
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+            <valueCode value="BR" />
+         </extension>
+      </given>
+   </name>
+</RelatedPerson>

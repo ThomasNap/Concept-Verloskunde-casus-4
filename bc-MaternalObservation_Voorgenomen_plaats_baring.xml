@@ -1,0 +1,35 @@
+<Observation xmlns="http://hl7.org/fhir">
+   <id value="21a0ed3e-90df-4e1f-bdbb-89dc4b276aad" />
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-MaternalObservation" />
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+      <value value="21a0ed3e-90df-4e1f-bdbb-89dc4b276aad" />
+   </identifier>
+   <status value="final" />
+   <code>
+      <coding>
+         <system value="http://snomed.info/sct" />
+         <code value="142961000146102" />
+         <display value="plaats van voorkeur voor bevalling (waarneembare entiteit)" />
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/3c07382a-4a1a-4c8c-83b9-5f6725ddd1d9" />
+      <display value="Vrouw: Willemijn Yzendoorn" />
+   </subject>
+   <context>
+      <reference value="EpisodeOfCare/03829beb-5fa4-4163-b114-032ba736af62" />
+      <display value="Zorgepisode: Willemijn Yzendoorn" />
+   </context>
+   <valueString>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/bc-observation-valuereference">
+         <valueReference>
+            <reference value="Organization/22b1037f-7ce9-4220-b0bb-c1b95208ac3f" />
+            <display value="Ziekenhuis: Erasmus MC, Sophia kinderziekenhuis" />
+         </valueReference>
+      </extension>
+   </valueString>
+</Observation>
