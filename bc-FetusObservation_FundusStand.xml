@@ -2,7 +2,7 @@
    <id value="e2a9fd37-4478-4a5f-a25f-1e27a924a35f" />
    <meta>
       <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
-      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-FetusObservation" />
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-MaternalObservation" />
    </meta>
    <identifier>
       <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
